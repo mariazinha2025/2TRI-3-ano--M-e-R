@@ -1,74 +1,43 @@
+:root{
+    --cor-fundo: #ff004c88 ;
+    --cor-principal: #b9014e ;
+    --cor-secundaria: #000000; 
+    --cor-destaque: #ffffff;
+    --cor-texto: #D7F9FF;
 
-:root {
-  --cor-de-fundo: #ff95ca;
-  --verde: #000000;
-  --branco: #fffafa;
-  --botao-ativo: #ffffff98;
-  --botao-inativo: #f11094;
-  --texto-fundo: rgb(255, 47, 134);
 }
 
 body {
-  background-color: var(--cor-de-fundo);
-  color: var(--branco);
-  font-family: 'Chakra Petch', sans-serif;
-}
-.conteudo-principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
-  margin: 40 auto
-}
-.titulo-principal {
-  text-align: right;
-  width: 100%;
-  font-size: 90px;
-}
-.botao {
-  font-family: "Crakra Petch", sans-serif;
-  background-color: var(--botao-inativo);
-  color: var(--branco);
-  display: flex;
-  justify-content: center;
-  padding: 2em ;
-  font-size: 80%;
-  align-items: center;
-  width: 100%;
-  border-bottom: 5px solid var(--botao-ativo);
-  border-left: 5px solid var(--botao-ativo);
-  border-right: 5px solid var(--botao-ativo);
-  border-top: none;
-}
-.botao:first-child {
-  border-radius: 40px  40px 0 0
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.botoes {
-  display: block;
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .botoes {
-      display: flex;
-  }
-}
-.botao:first-child {
-  border-radius: 40px 0 0 0;
+h1{
+    color: var(--cor-destaque);
 }
 
-.botao:last-child {
-  border-radius: 0 40px 0 0;
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
 }
-.ativo{
-  background-color: var(--botao-ativo);
-  border-bottom: 4px solid var(--verde);
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
 }
-  
- 
-
-
-
-
